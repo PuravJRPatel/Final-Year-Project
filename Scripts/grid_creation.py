@@ -14,8 +14,16 @@ def create_grid(region_shapefile, grid_res = 0.25):
   grid = gpd.GeoDataFrame({'geometry': grid_cells}, crs= region.crs)
   grid = gpd.clip(grid, region)
 
-  return grid
+  centroids = grid.copy()
+  centroids['geometry'] = grid.geometry.centroid
+  centroids['latitude'] = centroids['geometry'].y
+  centroids['longitude'] = centroids['geometry'].x
+
+  return grid, centroids
 
 if __name__ == "__main__":
-  grid = create_grid(r"C:\Users\purav\OneDrive\Desktop\Fi Year Project\Final-Year-Project\Data\Shapefile\India Shape\india_ds.dbf", grid_res=0.25)
+  grid, centroids = create_grid(r"C:\Users\purav\OneDrive\Desktop\Fi Year Project\Final-Year-Project\Data\Shapefile\India Shape\india_ds.dbf", grid_res=0.25)
   grid.to_file(r"C:\Users\purav\OneDrive\Desktop\Fi Year Project\Final-Year-Project\Data\Shapefile\India Shape\grid.shp")
+  centroids[["geometry"]].to_file(r"C:\Users\purav\OneDrive\Desktop\Fi Year Project\Final-Year-Project\Data\Shapefile\India Shape\centroids.shp")
+  centroids[["latitude", "longitude"]].to_csv(r"C:\Users\purav\OneDrive\Desktop\Fi Year Project\Final-Year-Project\Data\Processed\grid_nodes.csv", index=False)
+  print('Grid Completed')
