@@ -8,8 +8,6 @@ Climate Modeling using Graphical Neural Networks.
 4. Performance analysis of 30% project implemented.
 5. Conclusions.
 
-climate_model_project
-
 ├── data/                   
 │   ├── shapefile/            # Store the grid shapefile 
 │   ├── rainfall/             # Store raw rainfall .nc files
