@@ -11,7 +11,8 @@ Climate Modeling using Graphical Neural Networks.
 
 ## Projected Structure of the Project
 
-climate_model_project/
+climate_model_project
+
     ├── data/                   
     │   ├── shapefile/            # Store the grid shapefile 
     │   ├── rainfall/             # Store raw rainfall .nc files
@@ -25,7 +26,7 @@ climate_model_project/
     │   ├── rainfall_mapping.py   # Maps rainfall data to grid nodes
     │   ├── temperature_mapping.py # (Later) Maps temperature to grid
     │   ├── graph_construction.py # Creates graph from nodes & edges
-    │   ├── visualization.py      # Plot results 
+    │   ├── visualization.py      # Plot results (optional)
     │   └── train_gnn.py          # Train GNN model (later step)
     │
     ├── notebooks/                # Jupyter notebooks for analysis
@@ -46,4 +47,5 @@ climate_model_project/
     ├── main.py                   # Main script to run everything
     ├── requirements.txt           # Python dependencies
     ├── README.md                  # Documentation
-    └── .gitignore                 # Ignore unnecessary files
+    └── .gitignore                 # Ignore unnecessary files (e.g., .nc, large raw data)
+
