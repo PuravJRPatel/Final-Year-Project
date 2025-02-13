@@ -1,2 +1,7 @@
 demo/*.grib
 Notebooks/grid_with_rainfall.csv
+Results/Frames
+Results/*.mp4
+
+Data/Processed/*.parquet
+Data/Processed/*.geojson
