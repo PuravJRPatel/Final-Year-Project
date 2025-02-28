@@ -5,3 +5,5 @@ Results/*.mp4
 
 Data/Processed/*.parquet
 Data/Processed/*.geojson
+Data/Temperature
+Notebooks/temperature_data.csv
