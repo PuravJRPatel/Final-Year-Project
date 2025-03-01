@@ -8,3 +8,6 @@ Data/Processed/*.geojson
 Data/Temperature
 Notebooks/temperature_data.csv
 Scripts/Average_Rainfall
+Notebooks/grid_with_temperature.csv
+Notebooks/average_temperature.nc
+
