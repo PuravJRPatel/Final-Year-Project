@@ -7,7 +7,7 @@ from scipy.spatial import cKDTree
 # Paths
 grid_path = r"C:\Users\purav\OneDrive\Desktop\Fi Year Project\Final-Year-Project\Data\Shapefile\India Shape\grid.shp"
 rainfall_folder = r"C:\Users\purav\OneDrive\Desktop\Fi Year Project\Final-Year-Project\Data\Rainfall"
-output_folder = r"C:\Users\purav\OneDrive\Desktop\Fi Year Project\Final-Year-Project\Scripts"
+output_folder = r"C:\Users\purav\OneDrive\Desktop\Fi Year Project\Final-Year-Project\Scripts\Average_Rainfall"
 
 # Load Grid
 grid = gpd.read_file(grid_path)
