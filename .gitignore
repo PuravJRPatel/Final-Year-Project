@@ -14,4 +14,4 @@ Scripts/Average_Temperature
 
 Data/Processed/*.csv
 
-Notebooks/processed_graphs
+Notebooks/processed_graphs/*.pt
