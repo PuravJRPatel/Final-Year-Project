@@ -4,15 +4,13 @@ Results/Frames
 Results/*.mp4
 
 Data/Processed/*.parquet
-Data/Processed/*.geojson
+
 Data/Temperature
 Notebooks/temperature_data.csv
 
 Notebooks/grid_with_temperature.csv
 Notebooks/average_temperature.nc
 
-
-Data/Processed/*.csv
 
 Notebooks/processed_graphs/*.pt
 Notebooks/graph_embeddings
