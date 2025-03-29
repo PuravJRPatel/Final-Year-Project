@@ -6,6 +6,7 @@ Results/*.mp4
 Data/Processed/*.parquet
 
 Data/Temperature
+Data/Rainfall
 Notebooks/temperature_data.csv
 
 Notebooks/grid_with_temperature.csv
